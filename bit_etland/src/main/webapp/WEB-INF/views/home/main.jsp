@@ -7,7 +7,7 @@
 		
 		<div class="main1 grid-item" >
 		<h1>고객전용</h1><br />
-		<a href="#" id="cus_join">회원가입</a><br />
+		<a href="#" id="cus_join">회원가입${time}</a><br />
 		<a href="#" id="cus_login">로그인</a>
 		</div>
 		<div class="main2 grid-item">
