@@ -227,11 +227,11 @@
 		    <version>${commons-fileupload-version}</version>
 		</dependency>
 				<!-- commons-io -->
-		<!-- <dependency>
+		 <dependency>
 		    <groupId>commons-io</groupId>
 		    <artifactId>commons-io</artifactId>
 		    <version>${commons-io-version}</version>
-		</dependency> -->
+		</dependency> 
 		
 		
 		<!-- Test -->
