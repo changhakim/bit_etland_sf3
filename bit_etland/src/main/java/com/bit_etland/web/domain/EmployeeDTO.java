@@ -9,7 +9,9 @@ public  class EmployeeDTO {
 				   name,
 				   birthDate,
 				   photo,
-				   notes;
+				   notes
+				   ;
+	//dfd
 
 	
 }
