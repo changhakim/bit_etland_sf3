@@ -2,10 +2,13 @@ package com.bit_etland.web.service;
 
 import java.util.List;
 
-import com.bit_etland.web.domain.ShipperDTO;
+import org.springframework.stereotype.Component;
 
+import com.bit_etland.web.domain.ShipperDTO;
+@Component
 public interface ShipperService {
 
+	
 public void insertShipper(ShipperDTO shipper);
 	
 	public List<ShipperDTO> selectShipperList();
