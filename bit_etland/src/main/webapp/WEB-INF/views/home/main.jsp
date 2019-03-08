@@ -45,7 +45,7 @@ $('#cus_join').click(function(){
 	location.assign('customer.do?cmd=move&page=signup');
 });
 $('#cus_login').click(function(){
-	location.assign('customer.do?cmd=move&page=signin');
+	location.assign('${ctx}/move/customer/signin');
 });
 $('#oop_access').click(function(){
 	/* app.main(); */

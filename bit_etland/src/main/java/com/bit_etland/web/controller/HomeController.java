@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
@@ -23,7 +24,7 @@ public class HomeController {
 
 	
 	
-	@RequestMapping(value="/",method=RequestMethod.GET)
+	@RequestMapping("/")
 	public String home(HttpSession session,HttpServletRequest request) {
 		logger.info("\n --------- Welcome {} !! ----------","Home");
 		String ctx = request.getContextPath();
@@ -34,6 +35,13 @@ public class HomeController {
 		session.setAttribute("time",new SimpleDateFormat("YYYY년 MM월-dd일 hh:mm:ss").format(new Date()));
 		
 		return "public:home/main.tiles";
+	}
+	@RequestMapping("/move/{dir}/{page}")
+	public String move(
+			@PathVariable String dir,
+			@PathVariable String page) {
+		logger.info("\n --------- move to {} !! ----------",dir+"/"+page);
+		return String.format("public:%s/%s.tiles", dir,page);
 	}
 	
 }
