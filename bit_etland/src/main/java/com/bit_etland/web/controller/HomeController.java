@@ -33,7 +33,7 @@ public class HomeController {
 		session.setAttribute("img", ctx+"/resources/img/");
 		session.setAttribute("time",new SimpleDateFormat("YYYY년 MM월-dd일 hh:mm:ss").format(new Date()));
 		
-		return "home/main";
+		return "public:home/main.tiles";
 	}
 	
 }
